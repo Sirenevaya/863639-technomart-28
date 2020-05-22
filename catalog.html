@@ -15,8 +15,8 @@
       <a href="/">
         <img src="img/logo.svg" alt="Логотип Техномарт" width="107" height="17">
       </a>
-      <form action="#" method="POST">
-        <input type="search" placeholder="Поиск:">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" name="search" placeholder="Поиск:">
       </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 10</a>
@@ -66,23 +66,41 @@
     <div>
       <span>Фильтр:</span>
 
-      <form action="https://echo.htmlacademy.ru/" method="POST">
+      <form action="https://echo.htmlacademy.ru/" method="get">
 
         <!-- Тут будет Фильтр по цене -->
 
         <fieldset>
           <legend>Производители</legend>
-          <label><input type="checkbox" name="firm" value="Bosch" checked>BOSCH</label>
-          <label><input type="checkbox" name="firm" value="Interskol">ИНТЕРСКОЛ</label>
-          <label><input type="checkbox" name="firm" value="Makita" checked>MAKIta</label>
-          <label><input type="checkbox" name="firm" value="Dewalt">Dewalt</label>
-          <label><input type="checkbox" name="firm" value="Hitachi">Hitachi</label>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="Bosch" checked>BOSCH</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Makita" checked>MAKIta</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Dewalt">Dewalt</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Hitachi">Hitachi</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset>
           <legend>Питание:</legend>
-          <label><input type="radio" name="charge" value="battery" checked>Аккумуляторные</label>
-          <label><input type="radio" name="charge" value="network">Сетевые</label>
+          <ul>
+            <li>
+              <label><input type="radio" name="charge" value="battery" checked>Аккумуляторные</label>
+            </li>
+            <li>
+              <label><input type="radio" name="charge" value="network">Сетевые</label>
+            </li>
+          </ul>
         </fieldset>
 
         <button type="submit">Показать</button>
@@ -242,6 +260,13 @@
       </div>
     </div>
   </footer>
+
+  <div>
+    <p>Товар добавлен в корзину!</p>
+    <a href="#">Продолжить покупки</a>
+    <a href="#">Оформить заказ</a>
+    <button type="button">Закрыть уведомление</button>
+  </div>
 
 </body>
 

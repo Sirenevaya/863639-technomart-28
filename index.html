@@ -16,8 +16,8 @@
       <a>
         <img src="img/logo.svg" alt="Логотип Техномарт" width="107" height="17">
       </a>
-      <form action="#" method="POST">
-        <input type="search" placeholder="Поиск:">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" name="search" placeholder="Поиск:">
       </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 0</a>
@@ -50,11 +50,11 @@
   </header>
 
   <main>
-    <h1>Интернет-магазин инструментов для ремонта, строительных материалов и техники для стройки</h1>
-    <!-- Cкрытый заголовок -->
+    <h1 class="visually-hidden">Интернет-магазин инструментов для ремонта, строительных материалов и техники для стройки
+    </h1>
 
     <section>
-      <h2>Категории товаров</h2> <!-- Cкрытый заголовок -->
+      <h2 class="visually-hidden">Категории товаров</h2>
       <ul>
         <li>
           <span>New</span>
@@ -316,12 +316,26 @@
 
   <div>
     <!-- Здесь будет карта -->
-    <button type="button">Закрыть</button>
+    <button type="button">Закрыть карту</button>
   </div>
 
   <div>
-    <!-- Здесь будет форма связи -->
-    <button type="button">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label>
+        Ваше имя:
+        <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+      </label>
+      <label>
+        Ваш e-mail:
+        <input type="email" name="email" placeholder="Для отправки ответа" required>
+      </label>
+      <label>
+        Текст письма:
+        <textarea name="message" placeholder="В свободной форме" required></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть форму обратной связи</button>
   </div>
 
 </body>
