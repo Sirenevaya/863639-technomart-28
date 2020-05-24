@@ -68,7 +68,17 @@
 
       <form action="https://echo.htmlacademy.ru/" method="get">
 
-        <!-- Тут будет Фильтр по цене -->
+        <fieldset>
+          <legend>Цена:</legend>
+          <label>
+            <span class="visually-hidden">Укажите минимальную цену</span>
+            <input type="number" name="min" placeholder="0" min="0" max="30000">
+          </label>
+          <label>
+            <span class="visually-hidden">Укажите максимальную цену до 30000</span>
+            <input type="number" name="max" placeholder="30000" min="0" max="30000">
+          </label>
+        </fieldset>
 
         <fieldset>
           <legend>Производители</legend>
@@ -109,85 +119,89 @@
     <div>
       <span>Сортировка:</span>
       <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По функционалу</li>
+        <li><a>По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
       </ul>
+      <button type="button"><span class="visually-hidden">От меньшего к большему</span></button>
+      <button type="button"><span class="visually-hidden">От большего к меньшему</span></button>
     </div>
 
     <ul>
       <li>
-        <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+        <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
         <h3>Перфоратор BOSCH BFG 6000</h3>
-        <span>30500 Р.</span>
-        <span>25500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
-        <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+        <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
         <h3>Перфоратор BOSCH BFG 6000</h3>
-        <span>30500 Р.</span>
-        <span>25500 Р.</span>
-        <button type="submit">Купить</button>
-        <button type="submit">В закладки</button>
-      </li>
-      <li>
-        <span>New</span>
-        <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-        <h3>Перфоратор BOSCH BFG 6000</h3>
-        <span>30500 Р.</span>
-        <span>25500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
         <span>New</span>
-        <img src="img/bosch-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+        <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
+        <h3>Перфоратор BOSCH BFG 6000</h3>
+        <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
+        <button type="submit">Купить</button>
+        <button type="submit">В закладки</button>
+      </li>
+      <li>
+        <span>New</span>
+        <img src="img/bosch-3000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом" width="127" height="112">
         <h3>Перфоратор BOSCH BFG 3000</h3>
-        <span>22500 Р.</span>
-        <span>15500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>22500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>15500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
-        <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+        <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
         <h3>Перфоратор BOSCH BFG 6000</h3>
-        <span>30500 Р.</span>
-        <span>25500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
         <span>New</span>
-        <img src="img/bosch-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+        <img src="img/bosch-2000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом и красной кнопкой" width="127"
+          height="112">
         <h3>Перфоратор BOSCH BFG 2000</h3>
-        <span>12500 Р.</span>
+        <p>12500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
         <span>New</span>
-        <img src="img/bosch-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+        <img src="img/bosch-3000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом" width="127" height="112">
         <h3>Перфоратор BOSCH BFG 3000</h3>
-        <span>22500 Р.</span>
-        <span>15500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>22500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>15500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
-        <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+        <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
         <h3>Перфоратор BOSCH BFG 6000</h3>
-        <span>30500 Р.</span>
-        <span>25500 Р.</span>
+        <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+        <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
       <li>
         <span>New</span>
-        <img src="img/bosch-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+        <img src="img/bosch-2000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом и красной кнопкой" width="127"
+          height="112">
         <h3>Перфоратор BOSCH BFG 2000</h3>
-        <span>12500 Р.</span>
+        <p>12500 Р.</p>
         <button type="submit">Купить</button>
         <button type="submit">В закладки</button>
       </li>
@@ -244,9 +258,9 @@
         <p>Все права защищены</p>
       </div>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграмм</a></li>
+        <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
       </ul>
       <div>
         <p>Обратная связь:
