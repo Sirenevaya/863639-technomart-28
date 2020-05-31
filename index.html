@@ -62,139 +62,158 @@
     <h1 class="visually-hidden">Интернет-магазин инструментов для ремонта, строительных материалов и техники для стройки
     </h1>
 
-    <section>
+    <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
-      <ul>
-        <li>
-          <span>New</span>
+      <ul class="categories-list">
+        <li class="categories-item yellow">
+          <span class="label">New</span>
           Материалы
           <a href="#">на любой вкус</a>
         </li>
-        <li>
+        <li class="categories-item blue">
           Инструмент
           <a href="#">на все случаи</a>
         </li>
-        <li>
+        <li class="categories-item lilac">
           Техника
           <a href="#">для стройки</a>
         </li>
       </ul>
     </section>
 
-    <section>
-      <ul>
-        <li>
-          <h2>Перфораторы</h2>
-          <p>Настоящие мужские игрушки</p>
-          <a href="#">Открыть каталог</a>
-        </li>
-        <li>
-          <h2>Дрели</h2>
-          <p>Соседям на радость!</p>
-          <a href="#">Открыть каталог</a>
-        </li>
-      </ul>
-      <button type="button"><span class="visually-hidden">Влево</span></button>
-      <button type="button"><span class="visually-hidden">Вправо</span></button>
-      <div>
-        <span class="visually-hidden">Первый слайд</span>
-        <span class="visually-hidden">Второй слайд</span>
+    <section class="promo">
+
+      <div class="slider">
+        <ul class="slider-list">
+          <li class="slider-item first">
+            <div class="slider-text">
+              <h2>Перфораторы</h2>
+              <p>Настоящие мужские игрушки</p>
+            </div>
+            <a class="button slider-button" href="#">Открыть каталог</a>
+          </li>
+          <li class="slider-item two">
+            <div class="slider-text">
+              <h2>Дрели</h2>
+              <p>Соседям на радость!</p>
+            </div>
+            <a class="button slider-button" href="#">Открыть каталог</a>
+          </li>
+        </ul>
+        <button class="button-left" type="button"><span class="visually-hidden">Влево</span></button>
+        <button class="button-right" type="button"><span class="visually-hidden">Вправо</span></button>
+        <div class="slider-controls-items">
+          <span class="visually-hidden">Первый слайд</span>
+          <span class="visually-hidden">Второй слайд</span>
+        </div>
       </div>
 
-      <ul>
-        <li>
+      <ul class="promo-list">
+        <li class="promo-item green">
           Скидки 50%
           <a href="#">На 350 ТОВАРОВ</a>
         </li>
-        <li>
+        <li class="promo-item yellow">
           Доставка
           <a href="#">Бесплатно</a>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Популярные товары:</h2>
-      <a href="#">Все популярные товары</a>
+    <section class="popular-product">
+      <div class="popular-wrapper">
+        <h2 class="popular-title">Популярные товары:</h2>
+        <a class="button" href="#">Все популярные товары</a>
+      </div>
 
-      <ul>
-        <li>
+      <ul class="product-list">
+        <li class="product-item">
           <img src="img/bosch-9000.jpg" alt="Бирюзовый перфоратор с длинным сверлом" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 9000</h3>
-          <p><span class="visually-hidden">Старая цена</span>32500 Р.</p>
-          <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
-          <button type="submit">Купить</button>
-          <button type="submit">В закладки</button>
+          <p class="price-old"><span class="visually-hidden">Старая цена</span>32500 Р.</p>
+          <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
+          <div class="button-item">
+            <button class="button-buy" type="submit">Купить</button>
+            <button class="button-bookmark" type="submit">В закладки</button>
+          </div>
         </li>
-        <li>
-          <span>New</span>
+        <li class="product-item">
+          <span class="label product-label">New</span>
           <img src="img/bosch-3000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом" width="127" height="112">
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p>15500 Р.</p>
-          <button type="submit">Купить</button>
-          <button type="submit">В закладки</button>
+          <p class="price-new">15500 Р.</p>
+          <div class="button-item">
+            <button class="button-buy" type="submit">Купить</button>
+            <button class="button-bookmark" type="submit">В закладки</button>
+          </div>
         </li>
-        <li>
+        <li class="product-item">
           <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p><span class="visually-hidden">Старая цена</span>30500 Р.</p>
-          <p><span class="visually-hidden">Новая цена</span>25500 Р.</p>
-          <button type="submit">Купить</button>
-          <button type="submit">В закладки</button>
+          <p class="price-old"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+          <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
+          <div class="button-item">
+            <button class="button-buy" type="submit">Купить</button>
+            <button class="button-bookmark" type="submit">В закладки</button>
+          </div>
         </li>
-        <li>
-          <span>New</span>
+        <li class="product-item">
+          <span class="label product-label">New</span>
           <img src="img/bosch-2000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом и красной кнопкой"
             width="127" height="112">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p>12500 Р.</p>
-          <button type="submit">Купить</button>
-          <button type="submit">В закладки</button>
+          <p class="price-new">12500 Р.</p>
+          <div class="button-item">
+            <button class="button-buy" type="submit">Купить</button>
+            <button class="button-bookmark" type="submit">В закладки</button>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Популярные производители:</h2>
-      <a href="#">все производители</a>
+    <section class="popular-brand">
+      <div class="popular-wrapper">
+        <h2 class="popular-title">Популярные производители:</h2>
+        <a class="button" href="#">все производители</a>
+      </div>
 
-      <ul>
-        <li>
+      <ul class="popular-brand-list">
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/bosch-logo.png " alt="Логотип компании BOSCH" width="126" height="37">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/makita-logo.png" alt="Логотип компании Makita" width="123" height="40">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/dewalt-logo.png" alt="Логотип компании DeWALT" width="146" height="44">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/interskol-logo.png" alt="Логотип компании Interskol" width="200" height="88">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/hitachi-logo.png" alt="Логотип компании Hitachi" width="169" height="31">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/lg-logo.png" alt="Логотип компании LG" width="121" height="73">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/aeg-logo.png" alt="Логотип компании AEG" width="151" height="96">
           </a>
         </li>
-        <li>
+        <li class="popular-brand-item">
           <a href="#">
             <img src="img/metabo-logo.png" alt="Логотип компании Metabo" width="204" height="69">
           </a>
@@ -202,22 +221,22 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Сервисы</h2>
+    <section class="services">
+      <h2 class="title">Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
 
-      <ul>
-        <li><a href="#">Доставка</a></li>
+      <ul class="services-controls">
+        <li><a class="active" href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Кредит</a></li>
       </ul>
 
-      <ul>
-        <li>
-          <h2>Доставка</h2>
+      <ul class="services-list">
+        <li class="services-item delivery">
+          <h2 class="services-title">Доставка</h2>
           <p>
             Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
@@ -225,8 +244,8 @@
             поднимая его на ваш этаж!
           </p>
         </li>
-        <li>
-          <h2>Гарантия</h2>
+        <li class="services-item guarantee">
+          <h2 class="services-title">Гарантия</h2>
           <p>
             Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его возгоранием,
@@ -235,13 +254,13 @@
             Дом уж восстановите как-нибудь сами.
           </p>
         </li>
-        <li>
-          <h2>Кредит</h2>
+        <li class="services-item credit">
+          <h2 class="services-title">Кредит</h2>
           <p>
             Залезть в долговую яму стало проще!<br>
             Кредитные консультанты придут вам на помощь.
           </p>
-          <button type="button">Отправить заявку</button>
+          <button class="button" type="button">Отправить заявку</button>
         </li>
       </ul>
     </section>
