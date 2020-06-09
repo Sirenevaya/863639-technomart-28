@@ -86,53 +86,60 @@
 
       <ul class="promo-list">
         <li class="promo-item materials">
-          Материалы
+          <h2>Материалы</h2>
           <a href="#">на любой вкус</a>
-          <span class="label">New</span>
+          <span class="label"></span>
         </li>
         <li class="promo-item tool">
-          Инструмент
+          <h2>Инструмент</h2>
           <a href="#">на все случаи</a>
         </li>
         <li class="promo-item technic">
-          Техника
+          <h2>Техника</h2>
           <a href="#">для стройки</a>
         </li>
         <li class="promo-item discounts">
-          Скидки 50%
+          <h2>Скидки 50%</h2>
           <a href="#">На 350 ТОВАРОВ</a>
         </li>
         <li class="promo-item delivery">
-          Доставка
+          <h2>Доставка</h2>
           <a href="#">Бесплатно</a>
         </li>
       </ul>
 
       <div class="slider">
+
+        <div class="slider-controls">
+          <button class="button-left" type="button"><span class="visually-hidden">Влево</span></button>
+          <button class="button-right" type="button"><span class="visually-hidden">Вправо</span></button>
+        </div>
+
+        <div class="slider-controls-radio">
+          <input type="radio" id="radio-first" name="toggle">
+          <label for="radio-first" tabindex="0"><span class="visually-hidden">Первый слайд</span></label>
+          <input type="radio" id="radio-two" name="toggle">
+          <label class="active" for="radio-two" tabindex="0"><span class="visually-hidden">Второй слайд</span></label>
+
+        </div>
+
         <ul class="slider-list">
-          <li class="slider-item first">
+          <li class="slider-item first slide-current">
             <div class="slider-text">
-              <h2>Перфораторы</h2>
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </div>
+            <a class="button slider-button" href="#">Открыть каталог</a>
+          </li>
+          <li class="slider-item two">
+            <div class="slider-text">
+              <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
             <a class="button slider-button" href="#">Открыть каталог</a>
           </li>
-          <!-- <li class="slider-item two">
-              <div class="slider-text">
-                <h2>Дрели</h2>
-                <p>Соседям на радость!</p>
-              </div>
-              <a class="button slider-button" href="#">Открыть каталог</a>
-            </li>
-           -->
         </ul>
 
-        <button class="button-left" type="button"><span class="visually-hidden">Влево</span></button>
-        <button class="button-right" type="button"><span class="visually-hidden">Вправо</span></button>
-        <div class="slider-controls-items">
-          <span class="visually-hidden">Первый слайд</span>
-          <span class="visually-hidden">Второй слайд</span>
-        </div>
       </div>
     </section>
 
@@ -168,14 +175,14 @@
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </h3>
           <div class="price">
-            <p class="price-old"><span class="visually-hidden">Старая цена</span>22500 Р.</p>
+            <del class="price-old"><span class="visually-hidden">Старая цена</span>22500 Р.</del>
             <p class="price-new"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
           </div>
           <div class="button-item">
             <button class="button-buy" type="submit">Купить</button>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label product-label">New</span>
+          <span class="label product-label"></span>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -185,14 +192,14 @@
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </h3>
           <div class="price">
-            <p class="price-old"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+            <del class="price-old"><span class="visually-hidden">Старая цена</span>30500 Р.</del>
             <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
           </div>
           <div class="button-item">
             <button class="button-buy" type="submit">Купить</button>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label product-label">New</span>
+          <span class="label product-label"></span>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -209,7 +216,7 @@
             <button class="button-buy" type="submit">Купить</button>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label product-label">New</span>
+          <span class="label"></span>
         </li>
       </ul>
     </section>
@@ -217,7 +224,7 @@
     <section class="popular-brand container">
       <div class="popular-wrapper">
         <h2 class="popular-title">Популярные производители:</h2>
-        <a class="button popular-button" href="#">все производители</a>
+        <a class="button popular-button" href="#">Все производители</a>
       </div>
 
       <ul class="popular-brand-list">
@@ -292,7 +299,7 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="services-item guarantee">
+            <!-- <li class="services-item guarantee">
               <h2 class="services-title">Гарантия</h2>
               <p>
                 Если купленный у нас товар поломается или заискрит,<br>
@@ -309,7 +316,7 @@
                 Кредитные консультанты придут вам на помощь.
               </p>
               <button class="button" type="button">Отправить заявку</button>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
