@@ -116,11 +116,8 @@
         </div>
 
         <div class="slider-controls-radio">
-          <input type="radio" id="radio-first" name="toggle">
-          <label for="radio-first" tabindex="0"><span class="visually-hidden">Первый слайд</span></label>
-          <input type="radio" id="radio-two" name="toggle">
-          <label class="active" for="radio-two" tabindex="0"><span class="visually-hidden">Второй слайд</span></label>
-
+          <button type="button"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="active" type="button"><span class="visually-hidden">Второй слайд</span></button>
         </div>
 
         <ul class="slider-list">
@@ -129,14 +126,14 @@
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
             </div>
-            <a class="button slider-button" href="#">Открыть каталог</a>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider-item two">
             <div class="slider-text">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <a class="button slider-button" href="#">Открыть каталог</a>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
 
@@ -434,34 +431,38 @@
 
   </footer>
 
-  <div class="popup-map">
-    <!-- Здесь будет карта -->
-    <button type="button">Закрыть карту</button>
+  <div class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/modal-map.jpg" width="943" height="442"
+      alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть карту</span>
+    </button>
   </div>
 
-  <div class="popup-feedback">
-    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <p class="item-feedback">
-        <label for="name-feedback">Ваше имя:</label>
-        <input id="name-feedback" type="text" name="name" placeholder="Имя Фамилия" required>
-
-      </p>
-      <p class="item-feedback">
-        <label for="email-feedback">Ваш e-mail:</label>
-        <input id="email-feedback" type="email" name="email" placeholder="email@example.com" required>
-
-      </p>
-      <p class="item-feedback">
-        <label for="message-feedback">Текст письма:</label>
-        <textarea id="message-feedback" name="message" placeholder="В свободной форме" required></textarea>
-
-      </p>
-      <div class="popup-feedback-button">
+  <div class="modal modal-feedback">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-feedback">
+        <p class="item-feedback">
+          <label for="name-feedback">Ваше имя:</label>
+          <input id="name-feedback" type="text" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="item-feedback">
+          <label for="email-feedback">Ваш e-mail:</label>
+          <input id="email-feedback" type="email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p class="item-feedback">
+          <label for="message-feedback">Текст письма:</label>
+          <textarea id="message-feedback" name="message" placeholder="В свободной форме" required></textarea>
+        </p>
+      </div>
+      <div class="modal-feedback-button">
         <button class="button button-send" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="button-close" type="button"><span class="visually-hidden">Закрыть форму обратной
-        связи</span></button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть форму обратной связи</span>
+    </button>
   </div>
 
 </body>
