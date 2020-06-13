@@ -150,6 +150,13 @@ input[type="radio"].visually-hidden  {
   background-position: 7% 47%;
 } 
 
+.form-search input::-webkit-search-decoration,
+.form-search input::-webkit-search-cancel-button,
+.form-search input::-webkit-search-results-button,
+.form-search input::-webkit-search-results-decoration { 
+  display: none; 
+}
+
 .form-search input[type="search"]::-webkit-input-placeholder {
   color: var(--basic-white);
 }
@@ -289,7 +296,6 @@ input[type="radio"].visually-hidden  {
 }
 
 .header-contact {
-  flex-grow: 1;
   margin-top: 53px;
   margin-left: 26px;
   text-align: center;
@@ -516,7 +522,7 @@ background-position: 0 0;
   align-items: center;
   min-height: 60px;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 40px;
   padding: 0;
   
   background-color: var(--basic-darkgrey);
@@ -574,7 +580,7 @@ background-position: 0 0;
 .promo-list h2 {
   margin: 0;
   margin-top: 21px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   margin-left: 23px;
   color: var(--basic-white);
   font-size: 24px;
@@ -781,19 +787,20 @@ background-position: 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   background-color: var(--special-wrapper);          
 }
 
 .popular-title {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 28px;
   color: var(--basic-darkgrey);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .popular-button {
@@ -818,7 +825,7 @@ background-position: 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   width: 220px;
   min-height: 318px;
@@ -831,11 +838,10 @@ background-position: 0 0;
 }
 
 .product-img {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 220px;
   height: 165px;
 }
 
@@ -861,8 +867,8 @@ background-position: 0 0;
 
 .product-title a {
   display: block;
-  margin-top: 13px;
-  margin-bottom: 7px;
+  margin-top: 12px;
+  margin-bottom: 9px;
   padding-right: 17px;
   padding-left: 18px;
   color: var(--basic-black);
@@ -873,30 +879,30 @@ background-position: 0 0;
 }
 
 .product-title a:focus {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .price {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 89px;
-}
-
-.price .price-old {
-  margin-bottom: 13px;
-  color: var(--special-old-price);
+  height: 83px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.price .price-old {
+  margin-bottom: 13px;
+  color: var(--special-old-price);
+}
+
 .price .price-new {
+  position: relative;
   margin: 0;
-  margin-bottom: 21px;
-  margin-right: 10px;
+  margin-bottom: 19px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 120px;
@@ -910,10 +916,10 @@ text-decoration: underline;
 .price .price-new::after {
   content: "";
   position: absolute;
-  bottom: 26.5px;
-  right: -3.5px;
-  width: 27px;
-  height: 27px;
+  bottom: 5.4px;
+  right: -13.3px;
+  width: 27.3px;
+  height: 27.3px;
   border-radius: 1px;
   background-color: var(--basic-red);
   transform: rotate(45deg);
@@ -926,6 +932,7 @@ text-decoration: underline;
 .button-item {
   display: none;
   position: absolute;
+  top: 0;
   padding-top: 38px;
   padding-bottom: 50px;
   width: 218px;
@@ -960,6 +967,7 @@ text-decoration: underline;
 .button-buy:active,
 .button-buy:focus {
   background-color: var(--special-green-active);
+  box-shadow: inset 0px -3px 0px #367315;
 } 
 
 .button-buy::before {
@@ -1132,6 +1140,7 @@ text-decoration: underline;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .services-list .delivery {
@@ -1180,6 +1189,7 @@ text-decoration: underline;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .about-company p {
@@ -1192,8 +1202,10 @@ text-decoration: underline;
 .about-company-list {
   position: relative;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 26px;
+  padding: 0;
+  padding-left: 36px;
   list-style: none;
   font-size: 18px;
   line-height: 24px;
@@ -1231,6 +1243,10 @@ text-decoration: underline;
   text-transform: uppercase;
   background-color: var(--basic-red);
   border: none;
+}
+
+.button:hover {
+  background-color: #CA2C37;
 }
 
 .button:active,
@@ -1309,8 +1325,6 @@ text-decoration: underline;
   background-position: center center;
 }
 
-
-
  .breadcrumbs-list li:not(:first-child)::before {
   content: "";
   position: absolute;
@@ -1322,10 +1336,6 @@ text-decoration: underline;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
- 
-
-
-
 
 .catalog-title {
   margin: 0;
@@ -1335,6 +1345,7 @@ text-decoration: underline;
   color: var(--basic-darkgrey);
   font-size: 30px;
   line-height: 30px;
+  letter-spacing: -1px;
   text-transform: uppercase;
   background-color: var(--special-catalog-title);
 }
@@ -1477,20 +1488,25 @@ text-decoration: underline;
 .price-controls input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  outline: none;
 }
 
 .price-controlsinput[type="number"] {
   -moz-appearance: textfield;
+  outline: none;
 }
 .price-controls input[type="number"]:hover,
 .price-controls input[type="number"]:focus {
   -moz-appearance: number-input;
+  outline: none;
 }
 
 .price-controls input[type=number]::-webkit-inner-spin-button,
 .price-controls input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  outline: none;
+ 
 }
 
 .filter-option {
@@ -1666,11 +1682,13 @@ text-decoration: underline;
   align-items: center;
   width: 43px;
   margin-right: 17px;
+  background-color: transparent;
 }
 
 .sorting button {
   width: 11px;
   height: 10px;
+  background-color: transparent;
   background-image: url(../img/icon-dir.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1765,6 +1783,7 @@ text-decoration: underline;
 
 .category-descr .title {
   margin-bottom: 23px;
+  letter-spacing: -0.7px;
 }
 
 .category-descr p {
