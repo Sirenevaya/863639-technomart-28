@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Variables */
 
 :root {
@@ -75,6 +82,7 @@ input[type="radio"].visually-hidden  {
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -117,16 +125,15 @@ input[type="radio"].visually-hidden  {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .main-header-logo img {
+  width: 108px;
+  height: 18px;
   padding-top: 12px;
   padding-right: 57px;
   padding-bottom: 17px; 
   padding-left: 55px;
-  width: 108px;
-  height: 18px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -137,10 +144,10 @@ input[type="radio"].visually-hidden  {
 }
 
 .form-search input {
+  width: 270px;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 42px;
-  width: 270px;
   color: var(--basic-black);
   line-height: 24px;
   background-color: inherit;
@@ -171,7 +178,7 @@ input[type="radio"].visually-hidden  {
 
 .form-search input[type="search"]:-ms-input-placeholder {
   color:var(--basic-white);
-}
+} 
 
 .form-search input[type=search]:hover {
   background-image: url("../img/icon-search.svg");
@@ -179,11 +186,8 @@ input[type="radio"].visually-hidden  {
 }
 
 .form-search input[type=search]:focus {
-  background-image: url("../img/icon-search-red.svg");
-}
-
-.form-search input[type=search]:focus {
   background-color: var(--basic-white);
+  background-image: url("../img/icon-search-red.svg");
   outline: none;
   cursor: default;
 }
@@ -285,10 +289,10 @@ input[type="radio"].visually-hidden  {
 }
 
 .header-section p {
+  width: 197px;
   margin: 0;
   margin-top: 42.5px;
   margin-left: 30px;
-  width: 197px;
   color: var(--basic-red);
   font-size: 16px;
   line-height: 24px;
@@ -428,15 +432,15 @@ input[type="radio"].visually-hidden  {
 }
 
 .user-navigation .user-name::before {
-content: "";
-position: absolute;
-top: 15px;
-left: 15px;
-width: 20px;
-height: 18px;
-background-image: url(../img/icon-user.svg);
-background-repeat: no-repeat;
-background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .user-navigation .user-name:hover::before {
@@ -627,8 +631,8 @@ background-position: 0 0;
 
 .promo-item a {
   display: block;
-  margin-left: 23px;
   width: 135px;
+  margin-left: 23px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: var(--basic-white);
@@ -773,12 +777,10 @@ background-position: 0 0;
 }
 
 .slider-button {
+  width: 192px; 
   display: block;
   margin-top: 97px;
   margin-left: 24px;
-  padding-top: 11px;
-  padding-bottom: 9px;
-  width: 192px; 
 }
 
 /* Section popular product */
@@ -805,10 +807,8 @@ background-position: 0 0;
 
 .popular-button {
   display: inline-block;
-  margin-right: 14px;
-  padding-top: 11px;
-  padding-bottom: 9px;
   width: 192px;
+  margin-right: 14px;
 }
 
 .product-list {
@@ -901,11 +901,11 @@ background-position: 0 0;
 
 .price .price-new {
   position: relative;
+  width: 120px;
   margin: 0;
   margin-bottom: 19px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 120px;
   color: var(--basic-white);
   font-size: 17px;
   line-height: 18px;
@@ -933,9 +933,9 @@ background-position: 0 0;
   display: none;
   position: absolute;
   top: 0;
+  width: 218px;
   padding-top: 38px;
   padding-bottom: 50px;
-  width: 218px;
   background-color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
@@ -1068,11 +1068,11 @@ background-position: 0 0;
 
 .services-controls::after {
   content: "";
+  position: absolute;
   right: 0;
   bottom: 49px;
   width: 10px;
   height: 279px;
-  position: absolute;
   background-image: url(../img/vertical-line.png);
   background-repeat: no-repeat;
   background-position: 0, 0;
@@ -1080,10 +1080,10 @@ background-position: 0 0;
 
 .services-controls a {
   display: block;
+  width: 219px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 22px;
-  width: 219px;
   color: var(--basic-white);
   font-size: 21px;
   line-height: 30px;
@@ -1162,11 +1162,10 @@ background-position: 0 0;
 }
 
 .services .button {
+  width: 195px;
   margin-top: 27px;
   padding-top: 10px;
-  padding-right: 45px;
   padding-bottom: 10px;
-  padding-left: 45px;
   border-radius: 2px;
 }
 
@@ -1203,7 +1202,7 @@ background-position: 0 0;
   position: relative;
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   padding: 0;
   padding-left: 36px;
   list-style: none;
@@ -1219,22 +1218,22 @@ background-position: 0 0;
   content: "";
   position: absolute;
   left: 0;
-  margin-top: 11px;
   width: 25px;
   height: 2px;
+  margin-top: 11px;
   background-color: var(--basic-red);
 }
 
 .about-company-button {
-  padding-top: 11px;
-  padding-right: 40px;
-  padding-bottom: 9px;
-  padding-left: 40px;
+  display: block;
+  width: 220px;
 }
 
 /* Button */
 
 .button {
+  padding-top: 11px;
+  padding-bottom: 9px;
   color: var(--basic-white);
   font: inherit;
   font-size: 14px;
@@ -1268,18 +1267,15 @@ background-position: 0 0;
 }
 
 .contacts figure {
-  margin: 0;
-  margin-top: 32px;
   width: 300px;
   height: 158px;
+  margin: 0;
+  margin-top: 32px;
 }
 
 .contacts-button {
+  width: 300px;
   margin-top: 25px;
-  padding-top: 11px;
-  padding-right: 61px;
-  padding-bottom: 9px;
-  padding-left: 62px;
 }
 
 .contacts-button:active {
@@ -1353,8 +1349,8 @@ background-position: 0 0;
 /* Filter */
 
 .filters {
-  margin-top: 5px;
   width: 220px;
+  margin-top: 5px;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
@@ -1491,13 +1487,8 @@ background-position: 0 0;
   outline: none;
 }
 
-.price-controlsinput[type="number"] {
+.price-controls input[type="number"] {
   -moz-appearance: textfield;
-  outline: none;
-}
-.price-controls input[type="number"]:hover,
-.price-controls input[type="number"]:focus {
-  -moz-appearance: number-input;
   outline: none;
 }
 
@@ -1518,7 +1509,9 @@ background-position: 0 0;
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1600,9 +1593,7 @@ background-position: 0 0;
 
 .filter-button {
   padding-top: 10px;
-  padding-right: 79px;
   padding-bottom: 10px;
-  padding-left: 78px;
   font-size: 13px;
   line-height: 18px;
   border-width: 1px;
@@ -1714,6 +1705,7 @@ background-position: 0 0;
   background-position: 0 0;
   outline: none;
 }
+
 /* Catalog */
 
 .catalog {
@@ -1871,9 +1863,9 @@ background-position: 0 0;
 }
 
  .footer-copyright p {
+  width: 227px;
   margin: 0;
   margin-top: 36px;
-  width: 227px;
   color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
@@ -1905,9 +1897,9 @@ background-position: 0 0;
 
 .social-item a {
   display: block;
-  margin-left: 3px;
   width: 41px;
   height: 41px;
+  margin-left: 3px;
   border-radius: 100%;
   background-color: var(--special-social);
 }
@@ -2071,6 +2063,12 @@ background-position: 0 0;
   background-color: #F4F4F4;
 }
 
+.button-send {
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+}
+
 /* Modal cart */
 
 .modal-notify {
@@ -2127,4 +2125,97 @@ background-position: 0 0;
   padding-left: 32px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+/* Animations */
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

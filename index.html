@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -441,15 +441,16 @@
   </div>
 
   <div class="modal modal-feedback">
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-feedback">
         <p class="item-feedback">
           <label for="name-feedback">Ваше имя:</label>
-          <input id="name-feedback" type="text" name="name" placeholder="Имя Фамилия" required>
+          <input class="name-feedback" id="name-feedback" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="item-feedback">
           <label for="email-feedback">Ваш e-mail:</label>
-          <input id="email-feedback" type="email" name="email" placeholder="email@example.com" required>
+          <input class="email-feedback" id="email-feedback" type="email" name="email" placeholder="email@example.com"
+            required>
         </p>
         <p class="item-feedback">
           <label for="message-feedback">Текст письма:</label>
@@ -464,6 +465,8 @@
       <span class="visually-hidden">Закрыть форму обратной связи</span>
     </button>
   </div>
+
+  <script src="js/feedback.js"></script>
 
 </body>
 
