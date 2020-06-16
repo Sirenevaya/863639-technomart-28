@@ -7,6 +7,7 @@
   <title>Интернет-магазин Техномарт</title>
   <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
   <meta name="keywords" content="инструменты для ремонта, перфораторы, строительные материалы">
+  <link href="/img/icon-mark.svg" type="image/png" rel="shortcut icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
@@ -121,17 +122,17 @@
         </div>
 
         <ul class="slider-list">
-          <li class="slider-item first slide-current">
-            <div class="slider-text">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-            </div>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-          <li class="slider-item two">
+          <li class="slider-item first">
             <div class="slider-text">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
+            </div>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+          </li>
+          <li class="slider-item two slide-current">
+            <div class="slider-text">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
             </div>
             <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
@@ -296,7 +297,7 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <!-- <li class="services-item guarantee">
+            <li class="services-item guarantee">
               <h2 class="services-title">Гарантия</h2>
               <p>
                 Если купленный у нас товар поломается или заискрит,<br>
@@ -313,7 +314,7 @@
                 Кредитные консультанты придут вам на помощь.
               </p>
               <button class="button" type="button">Отправить заявку</button>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -454,7 +455,8 @@
         </p>
         <p class="item-feedback">
           <label for="message-feedback">Текст письма:</label>
-          <textarea id="message-feedback" name="message" placeholder="В свободной форме" required></textarea>
+          <textarea class="message-feedback" id="message-feedback" name="message" placeholder="В свободной форме"
+            required></textarea>
         </p>
       </div>
       <div class="modal-feedback-button">
@@ -466,7 +468,7 @@
     </button>
   </div>
 
-  <script src="js/feedback.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

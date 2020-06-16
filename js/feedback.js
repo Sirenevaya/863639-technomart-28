@@ -4,12 +4,14 @@ var modalClose = contactsPopup.querySelector(".modal-close");
 var formFeedback = contactsPopup.querySelector(".modal-feedback-form");
 var nameFeedback = contactsPopup.querySelector(".name-feedback");
 var emailFeedback = contactsPopup.querySelector(".email-feedback");
+var messageFeedback = contactsPopup.querySelector(".message-feedback");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
   storage = localStorage.getItem("name");
+  storage = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -19,8 +21,9 @@ contactsButton.addEventListener("click", function (evt) {
   contactsPopup.classList.add("modal-show");
 
   if (storage) {
-    nameFeedback.value = storage;
-    emailFeedback.focus();
+    nameFeedback.value = localStorage.getItem("name");
+    emailFeedback.value = localStorage.getItem("email");
+    messageFeedback.focus();
   } else {
     nameFeedback.focus();
   }
@@ -33,7 +36,7 @@ modalClose.addEventListener("click", function (evt) {
 });
 
 formFeedback.addEventListener("submit", function (evt) {
-  if (!nameFeedback.value || !emailFeedback.value) {
+  if (!nameFeedback.value || !emailFeedback.value || !messageFeedback.value) {
     evt.preventDefault();
     contactsPopup.classList.remove("modal-error");
     contactsPopup.offsetWidth = contactsPopup.offsetWidth;
@@ -41,6 +44,9 @@ formFeedback.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", nameFeedback.value);
+    }
+    if (isStorageSupport) {
+      localStorage.setItem("email", emailFeedback.value);
     }
   }
 });
