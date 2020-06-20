@@ -662,7 +662,7 @@ input[type="radio"].visually-hidden  {
   background-image: url(../img/label.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 /* Slider */
@@ -1667,7 +1667,7 @@ input[type="radio"].visually-hidden  {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  z-index: 11;
+  z-index: 2;
 }
 
 .button-buy:hover,
@@ -1960,7 +1960,7 @@ input[type="radio"].visually-hidden  {
   border-top-style: solid;
   border-top-color: var(--basic-red);
   background-color: var(--basic-white);
-  z-index: 10;
+  z-index: 3;
 }
 
 /* Modal close */
@@ -1977,6 +1977,7 @@ input[type="radio"].visually-hidden  {
   background-position: 0 0;
   border: none;
   cursor: pointer;
+  z-index: 3;
 }
 
 /* Modal map */
@@ -1986,13 +1987,27 @@ input[type="radio"].visually-hidden  {
   top: auto;
   bottom: 52px;
   width: 943px;
-  height: 449px;
+  height: 442px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
 }
 
 .modal-map img {
   display: block;
-  height: 449px;
+  height: 442px;
 }
 
 /* Modal feedback */
