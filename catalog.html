@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -58,8 +58,10 @@
         </div>
 
         <div class="user-navigation">
-          <a class="user-name" href="#">Равшан Джамшутович</a>
-          <a class="user-navigation-logout" href="#"><span class="visually-hidden">Выход</span></a>
+          <div class="user-navigation-link">
+            <a class="user-name" href="#">Равшан Джамшутович </a>
+            <a class="user-navigation-logout" href="#"><span class="visually-hidden">Выход</span></a>
+          </div>
           <ul class="user-navigation-list">
             <li><a href="#">Мои заказы</a></li>
             <li><a href="#">Личный кабинет</a></li>
@@ -130,8 +132,6 @@
               </div>
             </div>
           </fieldset>
-          <hr>
-
 
           <fieldset>
             <legend>Производители:</legend>
@@ -161,10 +161,10 @@
               </li>
             </ul>
           </fieldset>
-          <hr>
+
           <fieldset>
             <legend>Питание:</legend>
-            <ul>
+            <ul class="filter-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input-radio" id="filter-battery" type="radio" name="charge"
                   value="battery" checked>
@@ -211,7 +211,7 @@
         <h2 class="visually-hidden">Список товаров для ремонта</h2>
 
         <ul class="product-list">
-          <li class="product-item">
+          <li class="product-item label">
             <div class="product-img">
               <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144"
                 height="128">
@@ -224,10 +224,10 @@
               <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
-            <span class="label product-label"></span>
+            <!--  <span class="label product-label"></span> -->
           </li>
 
           <li class="product-item">
@@ -243,12 +243,12 @@
               <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
           </li>
 
-          <li class="product-item">
+          <li class="product-item label">
             <div class="product-img">
               <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144"
                 height="128">
@@ -261,61 +261,7 @@
               <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
-              <button class="button-bookmark" type="submit">В закладки</button>
-            </div>
-            <span class="label product-label"></span>
-          </li>
-
-          <li class="product-item">
-            <div class="product-img">
-              <img src="img/bosch-3000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом" width="127"
-                height="112">
-            </div>
-            <h3 class="product-title">
-              <a href="#">Перфоратор BOSCH BFG 3000</a>
-            </h3>
-            <div class="price">
-              <del class="price-old"><span class="visually-hidden">Старая цена</span>22500 Р.</del>
-              <p class="price-new"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
-            </div>
-            <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
-              <button class="button-bookmark" type="submit">В закладки</button>
-            </div>
-            <span class="label product-label"></span>
-          </li>
-
-          <li class="product-item">
-            <div class="product-img">
-              <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144"
-                height="128">
-            </div>
-            <h3 class="product-title">
-              <a href="#">Перфоратор BOSCH BFG 6000</a>
-            </h3>
-            <div class="price">
-              <del class="price-old"><span class="visually-hidden">Старая цена</span>30500 Р.</del>
-              <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
-            </div>
-            <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
-              <button class="button-bookmark" type="submit">В закладки</button>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="product-img">
-              <img src="img/bosch-2000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом и красной кнопкой"
-                width="127" height="112">
-            </div>
-            <h3 class="product-title">
-              <a href="#">Перфоратор BOSCH BFG 2000</a>
-            </h3>
-            <div class="price">
-              <p class="price-new">12500 Р.</p>
-            </div>
-            <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
           </li>
@@ -333,7 +279,60 @@
               <p class="price-new"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
+              <button class="button-bookmark" type="submit">В закладки</button>
+            </div>
+          </li>
+
+          <li class="product-item label">
+            <div class="product-img">
+              <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144"
+                height="128">
+            </div>
+            <h3 class="product-title">
+              <a href="#">Перфоратор BOSCH BFG 6000</a>
+            </h3>
+            <div class="price">
+              <del class="price-old"><span class="visually-hidden">Старая цена</span>30500 Р.</del>
+              <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
+            </div>
+            <div class="button-item">
+              <a class="button-buy" href="#">Купить</a>
+              <button class="button-bookmark" type="submit">В закладки</button>
+            </div>
+          </li>
+
+          <li class="product-item label">
+            <div class="product-img">
+              <img src="img/bosch-2000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом и красной кнопкой"
+                width="127" height="112">
+            </div>
+            <h3 class="product-title">
+              <a href="#">Перфоратор BOSCH BFG 2000</a>
+            </h3>
+            <div class="price">
+              <p class="price-new">12500 Р.</p>
+            </div>
+            <div class="button-item">
+              <a class="button-buy" href="#">Купить</a>
+              <button class="button-bookmark" type="submit">В закладки</button>
+            </div>
+          </li>
+
+          <li class="product-item">
+            <div class="product-img">
+              <img src="img/bosch-3000.jpg" alt="Бирюзовый перфоратор с тонким коротким сверлом" width="127"
+                height="112">
+            </div>
+            <h3 class="product-title">
+              <a href="#">Перфоратор BOSCH BFG 3000</a>
+            </h3>
+            <div class="price">
+              <del class="price-old"><span class="visually-hidden">Старая цена</span>22500 Р.</del>
+              <p class="price-new"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
+            </div>
+            <div class="button-item">
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
           </li>
@@ -351,10 +350,9 @@
               <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
-            <span class="label product-label"></span>
           </li>
 
           <li class="product-item">
@@ -369,7 +367,7 @@
               <p class="price-new">12500 Р.</p>
             </div>
             <div class="button-item">
-              <button class="button-buy" type="submit">Купить</button>
+              <a class="button-buy" href="#">Купить</a>
               <button class="button-bookmark" type="submit">В закладки</button>
             </div>
           </li>
@@ -385,8 +383,7 @@
       </ul>
     </div>
 
-
-    <section class="category-descr">
+    <section class="category-description">
       <div class="container">
         <h2 class="title">Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
@@ -398,7 +395,6 @@
       </div>
     </section>
 
-
   </main>
 
   <footer class="main-footer">
@@ -406,8 +402,11 @@
 
       <div class="main-footer-wrapper">
         <div class="footer-contacts">
-          <img class="footer-logo" src="img/logo.svg" alt="Логотип Техномарт" width="137" height="22">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a href="/">
+            <img class="footer-logo" src="img/logo.svg" alt="Логотип Техномарт" width="137" height="22">
+          </a>
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
         </div>
@@ -478,8 +477,8 @@
   <div class="modal modal-notify">
     <p>Товар добавлен в корзину!</p>
     <div class="modal-notify-link">
-      <a class="button button-buy-popap" href="#">Оформить заказ</a>
-      <a class="button button-continue-popap" href="#">Продолжить покупки</a>
+      <a class="button button-buy-popup" href="#">Оформить заказ</a>
+      <a class="button button-continue-popup" href="#">Продолжить покупки</a>
     </div>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть уведомление</span></button>
   </div>

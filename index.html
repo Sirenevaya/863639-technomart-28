@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -86,10 +86,9 @@
     <section class="promo container">
 
       <ul class="promo-list">
-        <li class="promo-item materials">
+        <li class="promo-item materials label">
           <h2>Материалы</h2>
           <a href="#">на любой вкус</a>
-          <span class="label"></span>
         </li>
         <li class="promo-item tool">
           <h2>Инструмент</h2>
@@ -107,38 +106,37 @@
           <h2>Доставка</h2>
           <a href="#">Бесплатно</a>
         </li>
+
+        <li class="slider">
+          <div class="slider-controls">
+            <button class="button-left" type="button"><span class="visually-hidden">Влево</span></button>
+            <button class="button-right" type="button"><span class="visually-hidden">Вправо</span></button>
+          </div>
+
+          <div class="slider-controls-radio">
+            <button type="button"><span class="visually-hidden">Первый слайд</span></button>
+            <button class="active" type="button"><span class="visually-hidden">Второй слайд</span></button>
+          </div>
+
+          <ul class="slider-list">
+            <li class="slider-item first">
+              <div class="slider-text">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="slider-item two slide-current">
+              <div class="slider-text">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+              </div>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+
+        </li>
       </ul>
-
-      <div class="slider">
-
-        <div class="slider-controls">
-          <button class="button-left" type="button"><span class="visually-hidden">Влево</span></button>
-          <button class="button-right" type="button"><span class="visually-hidden">Вправо</span></button>
-        </div>
-
-        <div class="slider-controls-radio">
-          <button type="button"><span class="visually-hidden">Первый слайд</span></button>
-          <button class="active" type="button"><span class="visually-hidden">Второй слайд</span></button>
-        </div>
-
-        <ul class="slider-list">
-          <li class="slider-item first">
-            <div class="slider-text">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-          <li class="slider-item two slide-current">
-            <div class="slider-text">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-            </div>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-        </ul>
-
-      </div>
     </section>
 
     <section class="popular-product container">
@@ -148,7 +146,7 @@
       </div>
 
       <ul class="product-list">
-        <li class="product-item">
+        <li class="product-item label">
           <div class="product-img">
             <img src="img/bosch-9000.jpg" alt="Бирюзовый перфоратор с длинным сверлом" width="184" height="164">
           </div>
@@ -160,7 +158,7 @@
             <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
           </div>
           <div class="button-item">
-            <button class="button-buy" type="submit">Купить</button>
+            <a class="button-buy" href="#">Купить</a>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
         </li>
@@ -177,12 +175,11 @@
             <p class="price-new"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
           </div>
           <div class="button-item">
-            <button class="button-buy" type="submit">Купить</button>
+            <a class="button-buy" href="#">Купить</a>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label product-label"></span>
         </li>
-        <li class="product-item">
+        <li class="product-item label">
           <div class="product-img">
             <img src="img/bosch-6000.jpg" alt="Бирюзовый перфоратор со сверлом средней длины" width="144" height="128">
           </div>
@@ -194,10 +191,9 @@
             <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
           </div>
           <div class="button-item">
-            <button class="button-buy" type="submit">Купить</button>
+            <a class="button-buy" href="#">Купить</a>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label product-label"></span>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -211,10 +207,9 @@
             <p class="price-new">12500 Р.</p>
           </div>
           <div class="button-item">
-            <button class="button-buy" type="submit">Купить</button>
+            <a class="button-buy" href="#">Купить</a>
             <button class="button-bookmark" type="submit">В закладки</button>
           </div>
-          <span class="label"></span>
         </li>
       </ul>
     </section>
@@ -282,13 +277,13 @@
 
         <div class="services-slider">
           <ul class="services-controls">
-            <li><a class="active" href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
+            <li><a data-target="services-delivery" href="#services-delivery">Доставка</a></li>
+            <li><a data-target="services-guarantee" href="#services-guarantee">Гарантия</a></li>
+            <li><a data-target="services-credit" href="#services-credit">Кредит</a></li>
           </ul>
 
           <ul class="services-list">
-            <li class="services-item delivery">
+            <li class="services-item services-delivery active">
               <h2 class="services-title">Доставка</h2>
               <p>
                 Мы с удовольствием доставим ваш товар прямо<br>
@@ -297,7 +292,7 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="services-item guarantee">
+            <li class="services-item services-guarantee">
               <h2 class="services-title">Гарантия</h2>
               <p>
                 Если купленный у нас товар поломается или заискрит,<br>
@@ -307,13 +302,13 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="services-item credit">
+            <li class="services-item services-credit">
               <h2 class="services-title">Кредит</h2>
               <p>
                 Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.
               </p>
-              <button class="button" type="button">Отправить заявку</button>
+              <a class="button" href="#">Отправить заявку</a>
             </li>
           </ul>
         </div>
@@ -328,7 +323,6 @@
           ремонта и строительства не оставит равнодушными любителей сэкономить на
           гастарбайтерах.
         </p>
-        <br>
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
@@ -348,11 +342,11 @@
           заехав в наш офис:
         </p>
         <figure>
-          <a class="contacts-link" href="#">
+          <a class="contacts-link" href="https://goo.gl/maps/dYkaBfPXt5b1hmVF8">
             <img src="img/map.jpg" alt="Карта офиса по адресу ул. Большая Конюшенная, 19" width="300" height="158">
           </a>
         </figure>
-        <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+        <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
 
@@ -363,8 +357,11 @@
 
       <div class="main-footer-wrapper">
         <div class="footer-contacts">
-          <img class="footer-logo" src="img/logo.svg" alt="Логотип Техномарт" width="137" height="22">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a>
+            <img class="footer-logo" src="img/logo.svg" alt="Логотип Техномарт" width="137" height="22">
+          </a>
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
         </div>
@@ -390,7 +387,6 @@
 
     <div class="footer-wrapper">
       <div class="container">
-
 
         <div class="footer-column">
           <div class="footer-copyright">
@@ -418,18 +414,17 @@
           </ul>
 
           <div class="communication">
-            <p>Обратная связь:<br>
+            <p>Обратная связь:
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p>Разработано —<br>
+            <p>Разработано —
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
-
       </div>
-    </div>
 
+    </div>
   </footer>
 
   <div class="modal modal-map">
@@ -476,8 +471,8 @@
   <div class="modal modal-notify">
     <p>Товар добавлен в корзину!</p>
     <div class="modal-notify-link">
-      <a class="button button-buy-popap" href="#">Оформить заказ</a>
-      <a class="button button-continue-popap" href="#">Продолжить покупки</a>
+      <a class="button button-buy-popup" href="#">Оформить заказ</a>
+      <a class="button button-continue-popup" href="#">Продолжить покупки</a>
     </div>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть уведомление</span></button>
   </div>

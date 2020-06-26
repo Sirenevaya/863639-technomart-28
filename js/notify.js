@@ -1,4 +1,4 @@
-var buttonBuy = document.querySelectorAll('.button-buy');
+var buttonBuy = document.querySelectorAll(".button-buy");
 var notifyPopup = document.querySelector(".modal-notify");
 var modalClose = notifyPopup.querySelector(".modal-close");
 
