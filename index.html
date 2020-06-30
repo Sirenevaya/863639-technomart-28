@@ -27,7 +27,8 @@
             <img src="img/logo.svg" alt="Логотип Техномарт" width="108" height="17">
           </a>
           <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="search-form">Форма поиска</label>
+            <input id="search-form" type="search" name="search" placeholder="Поиск:">
           </form>
 
           <div class="header-link">
@@ -154,12 +155,12 @@
             <a href="#">Перфоратор BOSCH BFG 9000</a>
           </h3>
           <div class="price">
-            <p class="price-old"><span class="visually-hidden">Старая цена</span>32500 Р.</p>
+            <del class="price-old"><span class="visually-hidden">Старая цена</span>32500 Р.</del>
             <p class="price-new"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
           </div>
           <div class="button-item">
             <a class="button-buy" href="#">Купить</a>
-            <button class="button-bookmark" type="submit">В закладки</button>
+            <button class="button-bookmark" type="button">В закладки</button>
           </div>
         </li>
 
@@ -176,7 +177,7 @@
           </div>
           <div class="button-item">
             <a class="button-buy" href="#">Купить</a>
-            <button class="button-bookmark" type="submit">В закладки</button>
+            <button class="button-bookmark" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item label">
@@ -192,7 +193,7 @@
           </div>
           <div class="button-item">
             <a class="button-buy" href="#">Купить</a>
-            <button class="button-bookmark" type="submit">В закладки</button>
+            <button class="button-bookmark" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -208,7 +209,7 @@
           </div>
           <div class="button-item">
             <a class="button-buy" href="#">Купить</a>
-            <button class="button-bookmark" type="submit">В закладки</button>
+            <button class="button-bookmark" type="button">В закладки</button>
           </div>
         </li>
       </ul>
